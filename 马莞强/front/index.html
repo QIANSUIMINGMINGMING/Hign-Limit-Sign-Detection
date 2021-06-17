@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>yolov4</title>
+        <script type="text/javascript" src="index.js"></script>
+        <link type="text/css" rel="stylesheet" href="index.css"/>
+    </head>
+    <body style="text-align: center; background-color: aquamarine;">
+        <h1 style="margin: 10px;">限高标志图片检测系统</h1>
+        当前模型：
+        <select id="model" style="margin-bottom: 20px;">
+            <option>yolov4</option>
+            <option>faster rcnn</option>
+        </select>
+        <div style="width: 1000px; height: 600px; background-color: pink; margin: 0 auto; position: relative;">
+            <input type="file" id="file-input" accept="image/png, image/jpeg"/>
+            <button type="button" class="ibtn" id="add-image">Add Image</button>
+            <button type="button" class="ibtn" id="delete-image">Delete Image</button>
+            <button type="button" class="ibtn" id="clear">Clear</button>
+            <select name="image-list" multiple="true" id="image-list">
+            </select>
+            <div id="image-div">
+                <img id="image"/>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+</html>
